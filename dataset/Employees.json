@@ -1,0 +1,33 @@
+{
+	"name": "Employees",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SalesConnectionFiles",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureBlob",
+		"structure": [
+			{
+				"name": "Prop_0",
+				"type": "String"
+			},
+			{
+				"name": "Prop_1",
+				"type": "String"
+			}
+		],
+		"typeProperties": {
+			"format": {
+				"type": "TextFormat",
+				"columnDelimiter": ",",
+				"rowDelimiter": "",
+				"nullValue": "\\N",
+				"treatEmptyAsNull": true,
+				"skipLineCount": 0,
+				"firstRowAsHeader": false
+			},
+			"fileName": "Employees.csv",
+			"folderPath": "adftutorial"
+		}
+	}
+}
