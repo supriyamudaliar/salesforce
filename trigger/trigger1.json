@@ -1,0 +1,23 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "CopyBlobtoBlob",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 1,
+				"startTime": "2019-03-07T08:17:00.000Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
