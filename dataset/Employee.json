@@ -1,0 +1,13 @@
+{
+	"name": "Employee",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "CRM",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureSqlTable",
+		"typeProperties": {
+			"tableName": "[dbo].[Employee]"
+		}
+	}
+}
