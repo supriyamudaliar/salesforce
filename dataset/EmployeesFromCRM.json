@@ -1,0 +1,24 @@
+{
+	"name": "EmployeesFromCRM",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SalesConnectionFiles",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureBlob",
+		"typeProperties": {
+			"format": {
+				"type": "TextFormat",
+				"columnDelimiter": "\t",
+				"rowDelimiter": "",
+				"nullValue": "\\N",
+				"encodingName": "UTF-8",
+				"treatEmptyAsNull": true,
+				"skipLineCount": 0,
+				"firstRowAsHeader": false
+			},
+			"fileName": "EmployeesFromCRM",
+			"folderPath": "adftutorial/output"
+		}
+	}
+}
