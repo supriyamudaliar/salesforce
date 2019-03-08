@@ -5,7 +5,11 @@
 		"factoryName": {
 			"type": "string",
 			"metadata": "Data Factory Name",
-			"defaultValue": "ADFTutorialDataFactorySalesforce"
+			"defaultValue": "adftutorialdatafactorysalesforce"
+		},
+		"CRM_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'CRM'"
 		},
 		"SalesConnectionFiles_connectionString": {
 			"type": "secureString",
@@ -53,6 +57,9 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"CRM_connectionString": {
+						"value": "[parameters('CRM_connectionString')]"
 					},
 					"SalesConnectionFiles_connectionString": {
 						"value": "[parameters('SalesConnectionFiles_connectionString')]"
